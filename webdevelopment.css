@@ -1,0 +1,42 @@
+body
+{
+    background-color: aliceblue;
+}
+
+p
+{
+    /* font related css */
+    font-family: 'Akaya Telivigala', cursive;  /*added this using google fonts*/
+    font-size: 12pt;
+    line-height: 2.4em; /*ek line ke uper neche kitne space ho*/
+    font-weight:bolder;
+}
+
+em
+{
+    color:darkmagenta;
+}
+
+
+.formfield
+{
+    background-color: rgb(198, 227, 238);
+    border-color: rgb(182, 213, 224);
+    border-style:groove;
+    color: darkred;
+    margin-bottom: 10px;
+    
+}
+
+table,th,td
+{
+    border: 1px solid green;
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+th
+{
+    width: 170px;
+}
+
