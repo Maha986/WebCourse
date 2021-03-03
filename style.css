@@ -1,0 +1,136 @@
+body
+{
+   background-image: url(imgs/bg.jpg);
+   background-size: 1550px 953px;
+   
+   color: whitesmoke;
+}
+
+.header
+{
+    height: 54px;
+    border-radius: 9px;
+}
+
+.logo
+{
+    display: inline-block;
+    height: 53px;
+    padding: 0px;
+}
+
+.logo img
+{
+    height: 61px ;
+    width: 52px;
+    margin-right: 4px;
+}
+
+.logo strong
+{
+    float: right;
+    font-size: 24px;
+}
+ 
+a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover, a:active{
+    color: gray;
+    text-decoration:line-through;
+}
+
+i.fab
+{
+    color: whitesmoke;
+    font-size: 23px;
+}
+.navbar
+{
+    position: absolute;
+    top: 8px;
+    left: 470px;
+    width: 613px;
+    height: 49px;
+}
+
+.navbar ul
+{
+    list-style-type: none;
+}
+
+.navbar li
+{
+    float: left;
+    padding-right: 44px;
+}
+.buttons
+{
+    position: absolute;
+    top: 17px;
+    right: 12px;
+    width: 114px;
+    height: 28px;
+}
+.buttons button
+{
+    background-color: teal;
+}
+
+.buttons button:hover
+{
+    background-color: rgb(131, 12, 12);
+}
+
+.homepage
+{
+    width: 598px;
+    height: 563px;
+    position: absolute;
+    top: 156px;
+    left: 53px;
+}
+
+pre
+{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.homepage p
+{
+    text-align: center;
+    font-size: 23px;
+}
+
+input
+{
+    position: relative;
+    left: 130px;
+    width: 333px;
+    border-radius: 6px;
+    text-align: center;
+    outline: none;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+#submit
+{
+    background-color: transparent;
+    color: whitesmoke;
+    border: 2px groove grey;
+    top: 64px;
+    width: 119px;
+    height: 31px;
+    left: -95px;
+    cursor: pointer;
+}
+
+#submit:active
+{
+    background-color: grey;
+}
