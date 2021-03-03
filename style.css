@@ -24,6 +24,7 @@ body
     height: 61px ;
     width: 52px;
     margin-right: 4px;
+    filter: invert(100%);  /*in order to convert black image to white*/
 }
 
 .logo strong
@@ -63,8 +64,10 @@ i.fab
 
 .navbar li
 {
-    float: left;
+    /* can using anyone of these either float or display: inline block; */
+    /* float: left; */
     padding-right: 44px;
+    display: inline-block;
 }
 .buttons
 {
@@ -95,6 +98,7 @@ i.fab
 
 pre
 {
+    font-family: 'Oxygen', sans-serif;
     font-weight: bolder;
     font-style: italic;
     font-size: 32px;
