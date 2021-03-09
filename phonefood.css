@@ -1,0 +1,53 @@
+/* Navigation */
+#navbar
+{
+    flex-direction: column;
+}
+#navbar a
+{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
+
+/* Home */
+#home h1
+{
+    text-align: center;
+}
+#home
+{
+    height: 600px;
+}
+#home::before
+{
+    height: 600px;
+}
+/* Services */
+#services
+{
+    flex-direction: column;
+}
+.ourservices
+{
+    width: 85%;
+    height: 100%;
+}
+
+/* Clients/about */
+#clients
+{
+    flex-wrap: wrap;
+}
+#clients img
+{
+    height: 97px;
+    width: 70px;
+}
+/* contact */
+.contactcontainer form
+{
+    width: 70%;
+}
+/* footer  */

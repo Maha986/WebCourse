@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EatQuick</title>
+    <link rel="stylesheet" href="foodordering.css">
+    <link rel="stylesheet" media="screen and (max-width: 1100px)" href="phonefood.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="imgs/foodlogo.jpg">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home">
+        <h1>Ready to Serve</h1>
+        <p>Deliciousness jumping into the mouth and the flavor inebriates you. From the farm to the pan.
+            From the pan into the fire.</p>
+        <p>The food that lengthens life.</p>
+        <button id="homeorder">Order Now</button>
+    </div>
+
+    <h1 class="h-primary">Our Services</h1>
+
+    <div id="services">
+        <div id="foodcatering" class="ourservices">
+            <img src="img/1.png" alt="food catering">
+            <h2>Food Catering</h2>
+            <p> We deal with Online Booking System you don’t need to come over the Stations. Assures Quality Control,
+                Schedule Maintenance, Budget Control, and a Safe and Efficient Service Site.</p>
+        </div>
+        <div id="bulkordering" class="ourservices">
+            <img src="img/2.png" alt="bulk ordering">
+            <h2>Bulk Ordering</h2>
+            <p>We work closely with a cooperative purchasing group to buy products in bulk. We also use bulk condiments
+                where possible.</p>
+        </div>
+        <div id="foodordering" class="ourservices">
+            <img src="img/3.png" alt="food ordering">
+            <h2>Food Ordering</h2>
+            <p>Order your Favourite Food, Grocery, Books, Beauty Products & range of other Items.</p>
+        </div>
+    </div>
+
+    <div id="about">
+        <h1 class="h-primary">Our Clients</h1>
+        <div id="clients">
+            <img src="img/logo1.png">
+            <img src="img/logo2.png">
+            <img src="img/logo3.png">
+            <img src="img/logo4.png">
+        </div>
+    </div>
+
+    <div id="contact">
+        <h1 class="h-primary">Contact Us</h1>
+        <div class="contactcontainer">
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Your name here">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Your email here">
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Your phone number here">
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+                </div>
+        </div>
+        </form>
+    </div>
+
+    <footer>
+        Copyright &copy; www.EatQuick.com. All rights reserved.
+    </footer>
+</body>
+
+</html>
