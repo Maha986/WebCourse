@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            /* height: 49px; */
+            /*don't do this, rather before main 100% height do, agr msla aye then do poistion:relative;*/
+            /* position: relative; */
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+        }
+
+        #navbar::before {
+            background-color: #c3bfce;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* height: 49px; */
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        #navbar ul li
+
+        /*harry*/
+            {
+            font-size: 1.2rem;
+        }
+
+        #navbar a {
+            color: rgb(7, 7, 90);
+            text-decoration: none;
+            padding: 4px 24px;
+            margin: 2px;
+        }
+
+        #navbar a:hover {
+            color: gray;
+            text-decoration: underline;
+        }
+
+        #logo {
+            margin-left: 23px;
+        }
+
+        #logo img {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+        }
+
+        img {
+            margin-top: 6px;
+        }
+
+        #lists {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #formdiv {
+            margin: 20px auto;
+            width: 60%;
+        }
+
+        .blockelement {
+            margin: 5px 0px;
+            font-size: 20px;
+        }
+
+        input,
+        textarea {
+            font-size: 18px;
+            border: 2px solid black;
+        }
+
+        button {
+            width: 90px;
+            height: 30px;
+            background-color: rgb(7, 7, 90);
+            color: white;
+            cursor: pointer;
+        }
+
+        input:focus,
+        textarea:focus {
+
+            box-shadow: 2px 2px 7px rgb(7, 7, 90);
+        }
+        .items
+        {
+            margin:auto;
+            width: 60%;
+        }
+        .btn-sm
+        {
+            width: 55px;
+            height: 23px;
+        }
+        table
+        {
+            width: 100%;
+        }
+        th,tr
+        {
+            text-align: left;
+            padding: 5px 0px;
+        }
+        table,th,tr
+        {
+            border-top: 2px solid rgb(153, 147, 139);
+            border-bottom: 2px solid rgb(207, 206, 205);
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" style="justify-content: space-between;">
+            <div style="display: flex;">
+                <div id="logo">
+                    <img
+                        src="https://cdn0.iconfinder.com/data/icons/work-from-home-18/512/ToDoList-planing-list-planlist-todo-512.png">
+                </div>
+                <ul style="margin: 12px;">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="time" style="color: rgb(7, 7, 90);">
+
+            </div>
+        </nav>
+    </header>
+
+    <div style="margin: 15px 0px;">
+        <h2 class="text-center">To-Do Lists</h2>
+
+        <div id="formdiv">
+            <div id="lists">
+                <label class="blockelement" for="title">Title</label>
+                <input class="blockelement" type="text" name="title">
+                <p style="margin-bottom: 15px;">Add an item to the list</p>
+                <label class="blockelement" for="description">Description</label>
+                <textarea class="blockelement" name="description" id="" cols="30" rows="10"></textarea>
+                <button>Add to list</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="items">
+        <h2>Your Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>SNo</th>
+                    <th>Item Title</th>
+                    <th>Item Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Get some COffee</td>
+                    <td>You need coffee as you are a coder</td>
+                    <td><button class="btn-sm">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById('time').style.fontSize = "large";
+        let a;
+        let date;
+        let time;
+        setInterval(() => {
+            a = new Date();
+            date = a.toLocaleDateString();
+            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = "Time: " + time + "<br>Date: " + date;
+
+        }, 1000)
+    </script>
+</body>
+
+</html>

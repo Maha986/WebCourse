@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iEducate - Transforming Online Education</title>
+    <link rel="stylesheet" href="ieducate.css">
+</head>
+
+<body>
+    <!-- <header> -->
+        <div id="navbar" class="h-nav background">
+            <div class="logo v-nav"><img
+                    src="https://www.idgcdn.com.au/dimg/700x700/dimg/microsoft_windows_10_s_surface_laptop_1800x1200-100814366-orig_1.jpg"
+                    alt="">
+            </div>
+            <ul class="navoption v-nav">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+
+            <div id="searching" class="v-nav">
+                <input type="text" id="search">
+                <button class="btn searchbtn">Search</button>
+            </div>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+        </div>
+    <!-- </header> -->
+    <div id="home" class="background">
+        <div id="introlines">
+            <div id="firsthalf">
+                <p class="headline">The Future of Education is here</p>
+                <p>Built on rapid advancements in artificial intelligence, virtual and augmented reality and the
+                    Internet of Things, in this future it is possible to assess and certify knowledge, skills and
+                    attitudes instantaneously.</p>
+                <div id="introbuttons">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn"> Watch Now</button>
+                </div>
+            </div>
+            <div id="secondhalf">
+                <img src="https://www.idgcdn.com.au/dimg/700x700/dimg/microsoft_windows_10_s_surface_laptop_1800x1200-100814366-orig_1.jpg"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="innerdiv">
+            <div class="content">
+                <p class="headline">The end of your search is here</p>
+                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+                    morals, beliefs, and habits. Educational methods include teaching, training, storytelling,
+                    discussion and directed research. Education frequently takes place under the guidance of educators,
+                    however learners can also educate themselves. Education can take place in formal or informal
+                    settings and any experience that has a formative effect on the way one thinks, feels, or acts may be
+                    considered educational. The methodology of teaching is called pedagogy.</p>
+            </div>
+            <div class="image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/FBE_CTU_lecture.jpg/330px-FBE_CTU_lecture.jpg"
+                    alt="Education">
+            </div>
+        </div>
+        <div class="innerdiv mid-div">
+            <div class="image">
+                <img src="https://miro.medium.com/max/2700/0*Wz93rPzLLTq1VwVW" alt="">
+            </div>
+            <div class="content">
+                <p class="headline">Transforming Education in Pakistan</p>
+                <p>In China, Confucius (551–479 BCE), of the State of Lu, was the country's most influential ancient
+                    philosopher, whose educational outlook continues to influence the societies of China and neighbours
+                    like Korea, Japan, and Vietnam. Confucius gathered disciples and searched in vain for a ruler who
+                    would adopt his ideals for good governance, but his Analects were written down by followers and have
+                    continued to influence education in East Asia into the modern era</p>
+            </div>
+        </div>
+        <div class="innerdiv">
+            <div class="content">
+                <p class="headline">Lets Grow Together</p>
+                <p>Education began in prehistory, as adults trained the young in the knowledge and skills deemed
+                    necessary in their society. In pre-literate societies, this was achieved orally and through
+                    imitation. Story-telling passed knowledge, values, and skills from one generation to the next. As
+                    cultures began to extend their knowledge beyond skills that could be readily learned through
+                    imitation, formal education developed. Schools existed in Egypt at the time of the Middle
+                    Kingdom.[2]
+                    Matteo Ricci (left) and Xu Guangqi (right) in the Chinese edition of Euclid's Elements published in
+                    1607
+                    Plato founded the Academy in Athens, the first institution of higher learning in Europe.[3]</p>
+            </div>
+            <div class="image">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipNoPG7Rv433oG5CY9rMAEdWvBYboyV5VULfbMbl=w296-h202-n-k-no-v1"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2 class="center">Contact Us</h2>
+        <div class="inputs">
+            <input class="formfields" type="text" placeholder="Enter your name">
+            <input class="formfields" type="tel" placeholder="Enter your phone">
+            <input class="formfields" type="email" placeholder="Enter your email">
+            <textarea class="formfields" name="" id="" cols="30" rows="10"
+                placeholder="Ellaborate your concern"></textarea>
+            <button>Submit</button>
+        </div>
+    </div>
+
+    <footer>
+        <p class="center">Copyright &copy; 2027 - All rights reserved</p>
+    </footer>
+
+    <script>
+        let burger=document.querySelector('.burger');
+        let navbar=document.querySelector('#navbar');
+        let logo=document.querySelector('.logo');
+        let navoption=document.querySelector('.navoption');
+        let searching=document.querySelector('#searching');
+
+        burger.addEventListener('click',()=>
+        {
+            navbar.classList.toggle('h-nav');
+            logo.classList.toggle('v-nav');
+            navoption.classList.toggle('v-nav');
+            searching.classList.toggle('v-nav');
+        })
+    </script>
+</body>
+
+</html>

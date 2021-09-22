@@ -18,11 +18,11 @@
 }
 #home
 {
-    height: 600px;
+    height: 650px;
 }
 #home::before
 {
-    height: 600px;
+    height: 710px;
 }
 /* Services */
 #services
